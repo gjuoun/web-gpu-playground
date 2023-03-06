@@ -1,12 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.14.6
+  '@webgpu/types': ^0.1.28
   typescript: ^4.9.3
   vite: ^4.1.0
 
+dependencies:
+  '@types/node': 18.14.6
+  '@webgpu/types': 0.1.28
+
 devDependencies:
   typescript: 4.9.5
-  vite: 4.1.4
+  vite: 4.1.4_@types+node@18.14.6
 
 packages:
 
@@ -208,6 +214,13 @@ packages:
     dev: true
     optional: true
 
+  /@types/node/18.14.6:
+    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+
+  /@webgpu/types/0.1.28:
+    resolution: {integrity: sha512-+iuxedqdbpOGzbCVH/zo2Qfa+17glLxEp2q9qTKgIm5aUUrvw3AobDHGFOf27R6ZAQQ+MwEvdWEKDIuvwmtsCA==}
+    dev: false
+
   /esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==}
     engines: {node: '>=12'}
@@ -319,7 +332,7 @@ packages:
     hasBin: true
     dev: true
 
-  /vite/4.1.4:
+  /vite/4.1.4_@types+node@18.14.6:
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -344,6 +357,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.14.6
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1

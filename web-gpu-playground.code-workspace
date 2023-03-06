@@ -1,0 +1,34 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "web-gpu-ts",
+      "path": "./web-gpu-ts"
+    }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#6cccc3",
+      "activityBar.background": "#6cccc3",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#bb59c6",
+      "activityBarBadge.foreground": "#15202b",
+      "commandCenter.border": "#15202b99",
+      "sash.hoverBorder": "#6cccc3",
+      "statusBar.background": "#46bfb3",
+      "statusBar.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#369c92",
+      "statusBarItem.remoteBackground": "#46bfb3",
+      "statusBarItem.remoteForeground": "#15202b",
+      "titleBar.activeBackground": "#46bfb3",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveBackground": "#46bfb399",
+      "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#46bfb3"
+  }
+}
