@@ -1,8 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  babylonjs: ^5.49.0
+  babylonjs-viewer: ^5.49.0
   typescript: ^4.9.3
   vite: ^4.1.0
+
+dependencies:
+  babylonjs: 5.49.0
+  babylonjs-viewer: 5.49.0
 
 devDependencies:
   typescript: 4.9.5
@@ -207,6 +213,21 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /babylonjs-gltf2interface/5.49.0:
+    resolution: {integrity: sha512-Xg27lo4lQgISzHEUnLXDNhG0V9DC9WDSv1BiDcrTIlRi5IBVWT/uTdeipw2ijAOUQWYqFoT6MdP+WcuzoKo8iw==}
+    dev: false
+
+  /babylonjs-viewer/5.49.0:
+    resolution: {integrity: sha512-rg0GnuD+bu1dm23a8XZk/WqCjHpBdvOZrrrYCztG3zYyuVF69NyYFHqX0Hccmy0Tp7+oe8pTGkCobkKOxYdovw==}
+    dependencies:
+      babylonjs-gltf2interface: 5.49.0
+    dev: false
+
+  /babylonjs/5.49.0:
+    resolution: {integrity: sha512-yCaiz+eDcbFojUS8cdsgQFGRYO5Nj7PjSs2eEVKwlIOqheeMJLXVyr01pJJ74rbMq1MPp9T8eZDrBs7Cndm8Rw==}
+    requiresBuild: true
+    dev: false
 
   /esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==}

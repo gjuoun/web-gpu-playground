@@ -1,3 +1,8 @@
-import './style.css'
+import "./style.css";
+import * as BABYLON from "babylonjs";
+import * as BabylonViewer from "babylonjs-viewer";
 
-let el = document.querySelector<HTMLDivElement>('#app')!
+BabylonViewer.InitTags();
+
+
+let el = document.querySelector<HTMLDivElement>("#app")!;
