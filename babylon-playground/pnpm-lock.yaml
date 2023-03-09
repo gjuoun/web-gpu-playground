@@ -1,12 +1,16 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@babylonjs/core': ^5.49.1
+  '@babylonjs/loaders': ^5.49.1
   babylonjs: ^5.49.0
   babylonjs-viewer: ^5.49.0
   typescript: ^4.9.3
   vite: ^4.1.0
 
 dependencies:
+  '@babylonjs/core': 5.49.1
+  '@babylonjs/loaders': 5.49.1_@babylonjs+core@5.49.1
   babylonjs: 5.49.0
   babylonjs-viewer: 5.49.0
 
@@ -15,6 +19,19 @@ devDependencies:
   vite: 4.1.4
 
 packages:
+
+  /@babylonjs/core/5.49.1:
+    resolution: {integrity: sha512-gnnnYs+wwMeT7Hf+uQS1+qS7rmoc/S8Nvp8wqOdY8in9jDkxn1UDcmOqfI+WZEeXu5ZRoinDiiXojvRT8aKntg==}
+    dev: false
+
+  /@babylonjs/loaders/5.49.1_@babylonjs+core@5.49.1:
+    resolution: {integrity: sha512-IAHMAgWs9IvHTI1/MGKNkbmu9IIVdpKHabZPVvfrqYCf4dpuYDATuw5hntq8ZlO1GbcwzCodXDJ2U/tgIOOtQA==}
+    peerDependencies:
+      '@babylonjs/core': ^5.22.0
+      babylonjs-gltf2interface: ^5.22.0
+    dependencies:
+      '@babylonjs/core': 5.49.1
+    dev: false
 
   /@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==}
