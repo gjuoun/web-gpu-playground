@@ -20,15 +20,22 @@ const createScene = () => {
 
   const box = baby.MeshBuilder.CreateBox("box", {});
   box.position.y = 0.5;
+  const boxMat = new BABYLON.StandardMaterial("boxMat");
+  boxMat.diffuseTexture = new BABYLON.Texture("https://www.babylonjs-playground.com/textures/floor.png");
+  box.material = boxMat;
 
   const roof = baby.MeshBuilder.CreateCylinder("roof", { diameter: 1.3, height: 1.2, tessellation: 3 });
   roof.scaling.x = 0.75
   roof.rotation.z = Math.PI / 2;
   roof.position.y = 1.22
 
+  const roofMat = new BABYLON.StandardMaterial("roofMat");
+  roofMat.diffuseTexture = new BABYLON.Texture("https://assets.babylonjs.com/environments/roof.jpg")!;
+  roof.material = roofMat;
+
   const ground = baby.MeshBuilder.CreateGround("ground", { width: 10, height: 10 });
   const groundMat = new baby.StandardMaterial("groundMat");
-  groundMat.diffuseColor = new baby.Color3( 0, 1,0);
+  groundMat.diffuseColor = baby.Color3.Blue();
   ground.material = groundMat
 
   // const sound = new BABYLON.Sound("name", "./sound/HIGH ROLLER CASINO GIRL!-303652662.mp3", scene, null, { loop: true, autoplay: true });
